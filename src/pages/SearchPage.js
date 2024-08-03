@@ -5,11 +5,13 @@ import { useEffect } from 'react';
 
 function SearchPage({reqUrl}){
 
+     // eslint-disable-next-line
     const [searchParams,setSearchParams] = useSearchParams()
     const query = searchParams.get("q")
     const {movies:movieList} = useFetch({apiPath:reqUrl,queryTerm:query})
     console.log(movieList)
 
+     // eslint-disable-next-line
     useEffect(()=>{
         document.title = `Search Results: ${query}`
     },[query])

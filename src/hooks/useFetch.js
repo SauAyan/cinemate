@@ -29,7 +29,8 @@ function useFetch({apiPath,queryTerm=""}) {
         
     }
 
-    useEffect(FetchMovies(),[url])
+    // eslint-disable-next-line
+    useEffect(()=>{FetchMovies()},[url])
 
     return {movies,loading,error}
 

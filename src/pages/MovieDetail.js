@@ -16,7 +16,8 @@ function MovieDetails(){
         
     }
 
-    useEffect(FetchMovieDetails(),[url])
+    // eslint-disable-next-line
+    useEffect(()=>{FetchMovieDetails()},[url])
 
     useEffect(()=>{
         document.title = `${movie.title}`
