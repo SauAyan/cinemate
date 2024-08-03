@@ -16,7 +16,7 @@ function MovieDetails(){
         
     }
 
-    useEffect(()=>{FetchMovieDetails()},[url])
+    useEffect(FetchMovieDetails(),[url])
 
     useEffect(()=>{
         document.title = `${movie.title}`

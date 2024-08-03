@@ -29,7 +29,7 @@ function useFetch({apiPath,queryTerm=""}) {
         
     }
 
-    useEffect(()=>{FetchMovies()},[url])
+    useEffect(FetchMovies(),[url])
 
     return {movies,loading,error}
 
